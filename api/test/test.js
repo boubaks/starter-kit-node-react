@@ -1,10 +1,9 @@
-var assert = require("assert");
-var url = require("url");
-var Zombie = require('zombie');
+var url = require('url');
+var assert = require('assert');
+var request = require('superagent');
 var requestify = require('requestify');
 var baseUrl = "http://localhost:1337";
 
-var request = require('superagent');
 var user = request.agent();
 
 function show(log) {

@@ -1,6 +1,3 @@
-var bcrypt = require('bcrypt');
-var validator = require('validator');
-
 var UserSchema = {
 };
 
