@@ -51,7 +51,7 @@ grunt serve --proxy
 grunt build --proxy
 ```
 
-The first effect is that the base api url is now `/api` instead of `http://devapi.ubqt.co` by default.
+The first effect is that the base api url is now `/api` instead of `http://localhost:3000` by default.
 
 The second effect on `serve` and `serve:dist` tasks is to run an applicative proxy between `/api` and the local api server that is specified as `proxy` option value or `http://localhost:3000` by default.
 
