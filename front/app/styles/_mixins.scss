@@ -1,0 +1,71 @@
+// fonts
+@mixin font-default { font-family: "Open Sans", Helvetica, Arial, sans-serif; }
+@mixin font-title { font-family: "Montserrat", Helvetica, Arial, sans-serif; }
+
+
+// ------------------ media queries ------------------- //
+// breakpoints
+$screen-xs-max: 767px;
+$screen-sm-max: 1224px;
+$screen-lg-min: 1440px;
+//  0             767              1224                   1440
+// |-----------------|-----------------|-----------------|-----------------
+//
+// |== extra-small ==|=================== not extra-small =================
+//
+// |============= small ===============|============ not small ============
+//
+// |===================== not large =====================|========= large =
+//
+//                                     |==== medium =====|
+//                   |== upper-small ==|
+//
+// aliases: extra-small: xs, small: sm, large: lg, medium: md, upper-small: us
+@mixin screen-xs {
+  @media only screen and (max-width: ($screen-xs-max)) {
+    @content;
+  }
+}
+@mixin screen-not-xs {
+  @media only screen and (min-width: ($screen-xs-max + 1)) {
+    @content;
+  }
+}
+@mixin screen-sm {
+  @media only screen and (max-width: ($screen-sm-max)) {
+    @content;
+  }
+}
+@mixin screen-not-sm {
+  @media only screen and (min-width: ($screen-sm-max + 1)) {
+    @content;
+  }
+}
+@mixin screen-lg {
+  @media only screen and (min-width: ($screen-lg-min)) {
+    @content;
+  }
+}
+@mixin screen-not-lg {
+  @media only screen and (max-width: ($screen-lg-min - 1)) {
+    @content;
+  }
+}
+@mixin screen-md {
+  @media only screen and (min-width: ($screen-sm-max + 1)) and (max-width: ($screen-lg-min - 1)) {
+    @content;
+  }
+}
+@mixin screen-us {
+  @media only screen and (max-width: ($screen-sm-max)) and (min-width: ($screen-xs-max + 1)) {
+    @content;
+  }
+}
+
+// use example :
+// p {
+//   font-size: 1.6rem;
+//   @include screen-xs {
+//     font-size: 1.4rem;
+//   }
+// }

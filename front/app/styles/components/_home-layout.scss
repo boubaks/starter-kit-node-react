@@ -1,0 +1,39 @@
+.home-layout {
+    .cover {
+        .background {
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            .header-info {
+                color: white;
+                text-align: center;
+                padding: 9em 0 6em;          
+                .header-description {
+                    font-size: 2rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+    .content-list {
+        padding-top: 1em;
+        max-width: $max-width;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .load-more-button {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 1.6em 1em;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-family: Montserrat,Helvetica,Arial,sans-serif;
+        color: grey;
+        font-weight: 100;
+        border: 1px solid whitesmoke;
+        background: white;
+    }
+}

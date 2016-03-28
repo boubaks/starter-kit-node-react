@@ -1,0 +1,5 @@
+.hidden { display: none; }
+/* micro clearfix (http://nicolasgallagher.com/micro-clearfix-hack/) */
+.clearfix:before,
+.clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }

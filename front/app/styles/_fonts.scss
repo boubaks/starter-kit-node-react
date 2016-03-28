@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "icons";
+    src: inline-font-files("icons.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@keyframes bounce{
+     from {transform: translateY(0);}
+     to   {transform: translateY(-10px);}
+}
+[class*="icon-"]:before { font-family: "icons"; }
+.icon-arrow-right:before { content: "\e000"; }
+.icon-arrow-left:before { content: "\e000"; transform: scaleX(-1); display: inline-block; }
+.icon-arrow-down:before { content: "\e000"; transform: rotate(90deg); display: inline-block; }
+.icon-dailymotion:before { content: "\e001"; }
+.icon-location:before { content: "\e002"; }
+.icon-facebook:before { content: "\e003"; }
+.icon-heart:before { content: "\e004"; }
+.icon-menu:before { content: "\e005"; }
+.icon-instagram:before { content: "\e006"; }
+.icon-photos:before { content: "\e007"; }
+.icon-search:before { content: "\e008"; }
+.icon-pinterest:before { content: "\e009"; }
+.icon-vimeo:before { content: "\e00a"; }
+.icon-twitter:before { content: "\e00b"; }
+.icon-vine:before { content: "\e00c"; }
+.icon-youtube:before { content: "\e00d"; }
+.icon-tumblr:before { content: "\e00e"; }
+.icon-flickr:before { content: "\e00f"; }
+.icon-close:before { content: "\e010"; }
+.icon-delete:before { content: "\e011"; }
+.icon-plus-light:before { content: "\e012"; }
+.icon-plus-large:before { content: "\e013"; }
+.icon-video-camera:before { content: "\e014"; }
+.icon-camera:before { content: "\e015"; }
+.icon-checkmark:before { content: "\e016"; }
+.icon-collections:before { content: "\e017"; }
+.icon-pencil:before { content: "\e018"; }
+.icon-random:before { content: "\e019"; }
+.icon-empty-like:before { content: "\e01a"; }
+.icon-hashtag:before { content: "#"; }
+
+// react-widgets icons
+@font-face {
+    font-family: 'RwWidgets';
+    src: inline-font-files("rw-widgets.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+ * Copyright (c) 2011-2012, Julieta Ulanovsky (julieta.ulanovsky@gmail.com), with Reserved Font Names 'Montserrat'
+ * This Font Software is licensed under the SIL Open Font License, Version 1.1.
+ */
+@font-face {
+    font-family: "Montserrat";
+    src: font-files("/styles/fonts/Montserrat-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: font-files("/styles/fonts/Montserrat-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: font-files("/styles/fonts/Montserrat-Light.woff");
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* Open Sans - Apache License */
+@font-face {
+    font-family: "Open Sans";
+    src: font-files("/styles/fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: font-files("/styles/fonts/OpenSans-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: font-files("/styles/fonts/OpenSans-Light.woff");
+    font-weight: 100;
+    font-style: normal;
+}

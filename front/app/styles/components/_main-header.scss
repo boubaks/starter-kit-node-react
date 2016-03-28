@@ -1,0 +1,40 @@
+.main-header {
+	height: 4em;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+	.name {
+		margin-left: 1rem;
+	    line-height: 6rem;
+    	font-size: 2rem;
+	    color: white;
+	    font-weight: 100;
+	    display: inline;
+	}
+	.signin-button {
+	    font-weight: 100;
+		display: inline;
+	    float: right;
+	    height: 2em;
+	    vertical-align: middle;
+	    margin-top: 1em;
+	    margin-left: 1rem;
+	    margin-right: 1rem;
+	    color: white;
+	    background: transparent;
+	    border-radius: 4px;
+	    padding: 0em 1em;
+	}
+	.signup-button {
+	    font-weight: 100;
+		float: right;
+	    height: 2em;
+	    margin-top: 1em;
+	    vertical-align: middle;
+	    color: white;
+	    background: #8e44ad;
+	    border-color: #8e44ad;
+	    border-radius: 4px;
+	    padding: 0em 1em;
+	}
+}

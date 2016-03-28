@@ -1,0 +1,51 @@
+@import '../bower_components/normalize.scss/_normalize.scss';
+@import 'mixins';
+@import 'fonts';
+@import 'colors';
+@import 'dimensions';
+
+html { font-size: 62.5%; /* 10px as reference for rem */ }
+html, body, #ubqt-root { height: 100% }
+body {
+    background: $bg-white;
+    @include font-default;
+    color: $text-black;
+    font-size: 1.6rem;
+    @include screen-xs { font-size: 1.0rem; }
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    @include font-title;
+}
+img { max-width: 100%; }
+
+// The font sizes for h1-h6.
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 1.87rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.33rem; }
+h6 { font-size: 1.07rem; }
+
+// reset styles of standard buttons
+[type="button"] {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    background: transparent;
+    overflow: visible;
+    line-height: 1em;
+}
+[contenteditable="true"] {
+    display: block; // default because inline is buggy but could be overriden with inline-block
+    min-width: 1em;
+    background-color: rgba($bg-black, 0.15);
+    &:focus {
+        background-color: rgba($bg-white, 0.25);
+    }
+}
+
+@import 'helpers';
+@import 'components';

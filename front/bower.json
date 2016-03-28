@@ -1,0 +1,9 @@
+{
+  "name": "starter-kit-node-react",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "normalize.scss": "~3.0.1"
+  },
+  "devDependencies": {}
+}
