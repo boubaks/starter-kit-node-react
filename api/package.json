@@ -16,6 +16,8 @@
     "express-session": "^1.12.1",
     "httpreq": "^0.4.16",
     "method-override": "^2.3.5",
+    "mongodb": "^2.1.18",
+    "mongoose": "^4.4.14",
     "multer": "^0.1.8",
     "passport": "^0.2.2",
     "passport-facebook": "^2.1.0",

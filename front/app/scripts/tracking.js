@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'production') {
         m.parentNode.insertBefore(a, m);
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
     // ga setup
-    window.ga('create', 'UA-59740328-1', 'auto');
+    window.ga('create', 'key', 'auto');
 } else {
     window.ga = function () {
         console.log('tracking', 'ga', arguments);
